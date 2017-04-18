@@ -20,12 +20,10 @@ namespace ConsoleApplication1
                     if (!int.TryParse(t, out value))
                     {
                         Console.WriteLine("Can only enter numbers.\n");
-                        Console.ReadKey();
                     }
                     else
                     {
-                        step2.Add(int.Parse(t));
-                        continue;
+                        step2.Add(value);
                     }
                 }
                 if (step2.ToArray().Length > 0)
